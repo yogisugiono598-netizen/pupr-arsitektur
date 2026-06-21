@@ -1,0 +1,704 @@
+{
+  "meta": {
+    "sumber": "Modul Standar Kelengkapan Gambar Arsitektur, Edisi 1 (September 2021)",
+    "penerbit": "Kementerian PUPR, Ditjen Cipta Karya, Direktorat Bina Teknik Permukiman dan Perumahan (BTPP)",
+    "acuan_normatif": "PP No.16 Tahun 2021 (pelaksanaan UU No.28 Tahun 2002 tentang Bangunan Gedung)",
+    "catatan": "Konten/Skala/Notasi adalah persyaratan MINIMAL per jenis gambar. 'presentasi' = aturan penyajian grafis per skala. Pemilihan skala umumnya fleksibel berdasarkan luas area perencanaan.",
+    "versi_data": "1.0.0"
+  },
+  "kelompok": {
+    "tapak_kawasan": "Rencana Tapak / Kawasan",
+    "denah": "Denah",
+    "tampak": "Tampak",
+    "potongan": "Potongan",
+    "rencana": "Gambar Rencana",
+    "detail": "Gambar Detail",
+    "perspektif": "Perspektif 3D"
+  },
+  "jenis_gambar": [
+    {
+      "id": "block_plan",
+      "nama": "Gambar Rencana Massa Bangunan (Block Plan)",
+      "kelompok": "tapak_kawasan",
+      "halaman": 41,
+      "konten": [
+        "Gambar tampak atas memperlihatkan blok/massa bangunan; atap bangunan terlihat, tidak tergambar detail",
+        "Menjelaskan kawasan dengan fungsi yang relatif sama dan saling berhubungan",
+        "Mencantumkan luasan bangunan",
+        "Informasi KDB rencana, KDH rencana, KLB rencana, sempadan bangunan, sempadan sungai"
+      ],
+      "skala": ["1:1000", "1:500", "1:250", "1:200"],
+      "notasi": [
+        "Arah Utara menunjuk sisi atas kertas; jika tidak menghadap Utara, ada notasi arah Utara sebenarnya",
+        "Legenda nama bangunan dan/atau fitur tapak yang penting",
+        "Judul Gambar",
+        "Skala angka dan skala batang"
+      ],
+      "presentasi": {
+        "1:500": [
+          "Bayangan pada semua bangunan (hasil desain maupun eksisting)",
+          "Render/arsir material untuk membedakan material alam (softscape) dan rancangan (hardscape), sebagian/seluruhnya",
+          "Interval kontur 20 cm"
+        ],
+        "1:200": [
+          "Bayangan pada semua bangunan (hasil desain maupun eksisting)",
+          "Render/arsir material softscape vs hardscape, sebagian/seluruhnya",
+          "Pola dan jalur sirkulasi sekunder, tersier, jalur emergensi terlihat",
+          "Interval kontur 8 cm"
+        ]
+      }
+    },
+    {
+      "id": "site_plan",
+      "nama": "Gambar Rencana Tapak (Site Plan)",
+      "kelompok": "tapak_kawasan",
+      "halaman": 44,
+      "konten": [
+        "Gambar tampak atas tapak: proyeksi ortogonal bangunan 1 meter dari tanah dengan elemen-elemen tapak",
+        "Termasuk: bangunan rancangan, bangunan eksisting, jalan akses, trotoar, selokan, pohon, perkerasan, jembatan, dsb."
+      ],
+      "skala": ["1:500", "1:250", "1:200"],
+      "notasi": [
+        "Arah Utara menunjuk sisi atas kertas; jika tidak menghadap Utara, ada notasi arah Utara sebenarnya",
+        "Garis dan angka kontur rekayasa/kontur desain",
+        "Notasi arah lalu lintas",
+        "Legenda nama bangunan dan/atau fitur tapak yang penting",
+        "Notasi potongan tapak",
+        "Notasi tampak tapak",
+        "Judul Gambar",
+        "Skala angka dan skala batang"
+      ],
+      "presentasi": {
+        "1:500": [
+          "Bayangan pada semua bangunan (desain & eksisting)",
+          "Render/arsir material softscape vs hardscape",
+          "Interval kontur 0,5 m; 1 m – 20 m tergantung keperluan"
+        ],
+        "1:200": [
+          "Bayangan pada semua bangunan (desain & eksisting)",
+          "Render/arsir material softscape vs hardscape",
+          "Pola dan jalur sirkulasi sekunder, tersier, jalur emergensi terlihat",
+          "Interval kontur 0,5 m; 1 m – 20 m tergantung keperluan"
+        ]
+      }
+    },
+    {
+      "id": "denah_lantai_dasar",
+      "nama": "Gambar Denah Lantai Dasar (Ground Plan)",
+      "kelompok": "denah",
+      "halaman": 48,
+      "konten": [
+        "Proyeksi ortogonal potongan satu meter di atas lantai dasar setiap bangunan",
+        "Harus ada konteks luar / hubungan dengan landscape furniture"
+      ],
+      "skala": ["1:200", "1:100", "1:50"],
+      "notasi": [
+        "Garis dan angka kontur rekayasa/desain (jika ada)",
+        "Garis dan angka kontur eksisting (jika ada)",
+        "Notasi garis sempadan depan, samping, belakang (garis putus-putus)",
+        "Peil/ketinggian permukaan ruang-ruang utama (cm atau satuan yang disepakati)",
+        "Nama ruangan",
+        "Notasi outline bangunan/ruang bawah tanah (garis putus-putus)",
+        "Notasi outline proyeksi atap atau lantai di atasnya yang lebih besar (mis. balkon) (garis putus-putus)",
+        "Notasi gambar Potongan dan notasi gambar Tampak",
+        "Notasi grid struktur utama: horizontal = angka, vertikal = huruf besar",
+        "Notasi radius dan arah bukaan pintu",
+        "Notasi tangga dan ramp (jika ada)",
+        "Notasi kemiringan ramp (jika ada)",
+        "Notasi arah lalu lintas",
+        "Notasi proyeksi batas ruang kosong atau void",
+        "Dimensi lebar jalan akses utama, radius putar",
+        "Dimensi horizontal dan dimensi vertikal",
+        "Arah Utara",
+        "Judul Gambar",
+        "Skala angka dan skala batang"
+      ],
+      "presentasi": {
+        "1:200": [
+          "Dinding terpotong diblok hitam",
+          "Kolom struktur dan kolom praktis diblok hitam",
+          "Kusen tidak tergambar, hanya notasi bukaan dengan satu garis sebagai simbol material kaca",
+          "Gambar tangga ada notasi naik/turun, lengkap dengan notasi potong"
+        ],
+        "1:100": [
+          "Dinding terpotong diblok hitam",
+          "Kolom struktur dan kolom praktis diblok hitam",
+          "Kusen tidak tergambar, hanya notasi bukaan dengan satu garis sebagai simbol material kaca",
+          "Gambar tangga ada notasi naik/turun, lengkap dengan notasi potong"
+        ],
+        "1:50": [
+          "Dinding terpotong beroutline tebal, arsir material dinding (termasuk campuran anti air dsb.)",
+          "Kolom struktur dan kolom praktis beroutline tebal, arsir material kolom",
+          "Semua kusen digambarkan lengkap",
+          "Material kaca digambarkan",
+          "Pola lantai pada ruang-ruang utama dan toilet digambarkan",
+          "Arah aliran air pada toilet dan floor drain",
+          "Gambar tangga ada notasi naik/turun + notasi potong",
+          "Gambar furniture utama yang fix, gambar fixture area kamar mandi"
+        ]
+      }
+    },
+    {
+      "id": "denah_bangunan",
+      "nama": "Gambar Denah Bangunan",
+      "kelompok": "denah",
+      "halaman": 51,
+      "konten": [
+        "Proyeksi ortogonal potongan satu meter di atas lantai setiap bangunan (per lantai tipikal)"
+      ],
+      "skala": ["1:200", "1:100", "1:50"],
+      "notasi": [
+        "Peil/ketinggian permukaan ruang-ruang utama (cm atau satuan yang disepakati)",
+        "Nama ruangan",
+        "Informasi material komponen horizontal",
+        "Notasi outline bangunan/ruang bawah tanah (garis putus-putus)",
+        "Notasi outline proyeksi atap atau lantai di atasnya yang lebih besar (mis. balkon) (garis putus-putus)",
+        "Notasi gambar Potongan dan notasi gambar Tampak",
+        "Notasi grid struktur utama: horizontal = angka, vertikal = huruf",
+        "Notasi radius dan arah bukaan pintu",
+        "Notasi tangga dan ramp (jika ada)",
+        "Notasi proyeksi batas ruang kosong atau void",
+        "Dimensi horizontal dan dimensi vertikal",
+        "Arah Utara",
+        "Judul Gambar",
+        "Skala angka dan skala batang"
+      ],
+      "presentasi": {
+        "1:200": [
+          "Dinding terpotong diblok hitam",
+          "Kolom struktur dan kolom praktis diblok hitam",
+          "Kusen tidak tergambar, hanya notasi bukaan satu garis sebagai simbol material kaca",
+          "Gambar tangga ada notasi naik/turun + notasi potong"
+        ],
+        "1:100": [
+          "Dinding terpotong diblok hitam",
+          "Kolom struktur dan kolom praktis diblok hitam",
+          "Kusen tidak tergambar, hanya notasi bukaan satu garis sebagai simbol material kaca",
+          "Gambar tangga ada notasi naik/turun + notasi potong"
+        ],
+        "1:50": [
+          "Dinding terpotong beroutline tebal, arsir material dinding (termasuk campuran anti air dsb.)",
+          "Kolom struktur dan kolom praktis beroutline tebal, arsir material kolom",
+          "Semua kusen digambarkan lengkap",
+          "Material kaca digambarkan",
+          "Pola lantai pada ruang-ruang utama dan toilet digambarkan",
+          "Arah aliran air pada toilet dan floor drain",
+          "Gambar tangga ada notasi naik/turun + notasi potong",
+          "Gambar sanitair utama yang fix dan gambar fixture area kamar mandi"
+        ]
+      }
+    },
+    {
+      "id": "denah_basement",
+      "nama": "Gambar Denah Rubanah (Basement)",
+      "kelompok": "denah",
+      "halaman": 54,
+      "konten": [
+        "Proyeksi ortogonal potongan satu meter di atas lantai ruang bawah tanah/rubanah (basement)"
+      ],
+      "skala": ["1:200", "1:100", "1:50"],
+      "notasi": [
+        "Peil/ketinggian permukaan ruang-ruang utama (cm atau satuan yang disepakati)",
+        "Nama ruangan",
+        "Informasi material komponen horizontal",
+        "Notasi gambar Potongan",
+        "Notasi grid struktur utama: horizontal = angka, vertikal = huruf",
+        "Notasi radius dan arah bukaan pintu",
+        "Notasi tangga dan ramp (jika ada)",
+        "Notasi proyeksi batas ruang kosong atau void",
+        "Notasi arah lalu lintas kendaraan + keterangan jumlah parkir kendaraan",
+        "Dimensi horizontal dan dimensi vertikal",
+        "Arah Utara",
+        "Judul Gambar",
+        "Skala angka dan skala batang"
+      ],
+      "presentasi": {
+        "1:200": [
+          "Dinding terpotong diblok hitam",
+          "Kolom struktur dan kolom praktis diblok hitam",
+          "Gambar tangga ada notasi naik/turun + notasi potong"
+        ],
+        "1:100": [
+          "Dinding terpotong diblok hitam",
+          "Kolom struktur dan kolom praktis diblok hitam",
+          "Gambar tangga ada notasi naik/turun + notasi potong"
+        ],
+        "1:50": [
+          "Dinding terpotong beroutline tebal, arsir material dinding (termasuk campuran anti air dsb.)",
+          "Kolom struktur dan kolom praktis beroutline tebal, arsir material kolom",
+          "Pola lantai pada ruang-ruang utama dan toilet digambarkan",
+          "Arah aliran air pada toilet dan floor drain",
+          "Gambar tangga ada notasi naik/turun + notasi potong",
+          "Gambar sanitair utama yang fix dan gambar fixture area kamar mandi"
+        ]
+      }
+    },
+    {
+      "id": "tampak_tapak",
+      "nama": "Gambar Tampak Tapak",
+      "kelompok": "tampak",
+      "halaman": 58,
+      "konten": [
+        "Representasi ortogonal dari desain; menggambarkan sosok desain tapak bangunan lengkap dengan komposisi spasial",
+        "Batas gambar tampak setidaknya hingga selokan drainase di sisi kiri dan kanan site",
+        "Minimal ada empat arah tampak"
+      ],
+      "skala": ["1:500", "1:250", "1:200"],
+      "notasi": [
+        "Judul Gambar",
+        "Skala angka dan skala batang"
+      ],
+      "presentasi": {
+        "1:500": [
+          "Render bayangan untuk menggambarkan komposisi spasial",
+          "Outline bangunan dan permukaan tanah dibuat lebih tebal dari semua garis pada gambar"
+        ],
+        "1:200": [
+          "Render bayangan untuk menggambarkan komposisi spasial",
+          "Outline permukaan tanah dibuat lebih tebal dari semua garis pada gambar",
+          "Figur manusia, pohon, kendaraan untuk menggambarkan skala dan konteks",
+          "Material kaca tidak dirender dengan skematik tiga garis, tetapi dengan teknik gradasi"
+        ]
+      }
+    },
+    {
+      "id": "tampak_bangunan",
+      "nama": "Gambar Tampak Bangunan",
+      "kelompok": "tampak",
+      "halaman": 61,
+      "konten": [
+        "Representasi ortogonal dari desain; menggambarkan sosok desain bangunan lengkap dengan komposisi spasial",
+        "Batas gambar tampak setidaknya hingga selokan drainase di sisi kiri dan kanan bangunan",
+        "Minimal ada empat arah tampak"
+      ],
+      "skala": ["1:200", "1:100", "1:50"],
+      "notasi": [
+        "Judul Gambar",
+        "Dimensi/ukuran/jarak/elevasi",
+        "Notasi struktur utama",
+        "Skala angka dan skala batang"
+      ],
+      "presentasi": {
+        "1:200": [
+          "Render bayangan untuk menggambarkan komposisi spasial",
+          "Outline bangunan dan permukaan tanah dibuat lebih tebal dari semua garis"
+        ],
+        "1:100": [
+          "Render bayangan untuk menggambarkan komposisi spasial",
+          "Outline bangunan dan permukaan tanah dibuat lebih tebal dari semua garis",
+          "Figur manusia, pohon, kendaraan untuk skala dan konteks",
+          "Render tekstur material",
+          "Material kaca tidak dirender skematik tiga garis tetapi dengan teknik gradasi",
+          "Kusen digambarkan dengan satu garis"
+        ],
+        "1:50": [
+          "Render bayangan untuk menggambarkan komposisi spasial",
+          "Outline bangunan dan permukaan tanah dibuat lebih tebal dari semua garis",
+          "Figur manusia, pohon, kendaraan untuk skala dan konteks",
+          "Render tekstur material",
+          "Material kaca tidak dirender skematik tiga garis tetapi dengan teknik gradasi",
+          "Kusen digambarkan dengan garis rangkap"
+        ]
+      }
+    },
+    {
+      "id": "potongan_tapak",
+      "nama": "Gambar Potongan Tapak",
+      "kelompok": "potongan",
+      "halaman": 65,
+      "konten": [
+        "Menampilkan potongan area perencanaan secara keseluruhan beserta ketinggian dan kemiringan kontur dengan interval tertentu",
+        "Terlihat tampak bagian dalam bangunan dan elemen-elemen tapak yang terpotong: kontur, jalan, perkerasan, drainase, dsb.",
+        "Minimal 2 (memanjang dan melintang)"
+      ],
+      "skala": ["1:500", "1:250", "1:200", "1:100"],
+      "notasi": [
+        "Garis dan angka kontur rekayasa/kontur desain",
+        "Notasi nama bangunan dan/atau fitur tapak yang penting",
+        "Judul Gambar",
+        "Skala angka dan skala batang"
+      ],
+      "presentasi": {
+        "1:500": [
+          "Garis outline bangunan terpotong lebih tebal",
+          "Garis tanah / elemen tapak yang terpotong lebih tebal",
+          "Tampak objek di belakang objek terpotong tidak terlihat"
+        ],
+        "1:200": [
+          "Garis outline bangunan terpotong lebih tebal",
+          "Garis tanah / elemen tapak yang terpotong lebih tebal",
+          "Tampak objek di belakang objek terpotong terlihat",
+          "Arsir tekstur permukaan tanah"
+        ],
+        "1:100": [
+          "Garis outline bangunan terpotong lebih tebal",
+          "Garis tanah / elemen tapak yang terpotong lebih tebal",
+          "Tampak objek di belakang objek terpotong terlihat",
+          "Arsir tekstur permukaan tanah"
+        ]
+      },
+      "catatan": "Memperlihatkan Ruang Bawah Tanah/Basement jika ada, serta kedalaman ruang terhadap muka jalan/tapak."
+    },
+    {
+      "id": "potongan_bangunan",
+      "nama": "Gambar Potongan Bangunan",
+      "kelompok": "potongan",
+      "halaman": 69,
+      "konten": [
+        "Batas potong 1/3 dari lebar bangunan terpendek di sisi kiri dan kanan, atau sampai pada saluran air pada bangunan",
+        "Bagian ruang dalam bangunan yang terpotong digambar lebih tipis",
+        "Bagian tampak bangunan jika terkena bidang potong digambar lebih tipis",
+        "Tidak memotong pada bagian kolom",
+        "Tidak memotong pada bagian balok",
+        "Garis potongan dimungkinkan tidak linier",
+        "Jika dalam denah ada tangga, salah satu gambar potongan HARUS memotong tangga",
+        "Minimal ada satu potongan melintang dan satu potongan memanjang bangunan",
+        "Pada bangunan dengan konfigurasi tak beraturan, dapat dilengkapi gambar Tampak-Potongan"
+      ],
+      "skala": ["1:200", "1:100", "1:50"],
+      "notasi": [
+        "Peil/ketinggian permukaan lantai ruang-ruang utama (cm atau satuan yang disepakati)",
+        "Nama ruangan",
+        "Informasi material komponen vertikal",
+        "Notasi gambar Detail (jika ada)",
+        "Notasi grid struktur utama: horizontal = angka",
+        "Dimensi horizontal dan vertikal (dimensi vertikal bisa di kanan atau kiri gambar)",
+        "Judul Gambar",
+        "Skala angka dan skala batang"
+      ],
+      "presentasi": {
+        "1:200": [
+          "Atap: struktur atap plat/balok diblok hitam; struktur atap (rangka) outline saja diblok hitam",
+          "Langit-langit: hanya garis langit-langit yang tergambar, struktur langit-langit tidak tergambar",
+          "Dinding terpotong diblok hitam",
+          "Kolom struktur & praktis diblok hitam; kolom (tidak terpotong) tergambar sebagai tampak",
+          "Pelat lantai diblok hitam; balok terpotong diblok hitam, balok melintang tergambar sebagai tampak",
+          "Tidak menggambarkan pondasi; potongan hanya sampai pelat lantai dan balok paling bawah"
+        ],
+        "1:100": [
+          "Atap: struktur atap plat/balok diblok hitam; rangka atap outline saja diblok hitam",
+          "Langit-langit: hanya garis langit-langit, struktur tidak tergambar",
+          "Dinding terpotong diblok hitam",
+          "Kolom struktur & praktis diblok hitam; kolom tergambar sebagai tampak",
+          "Pelat lantai diblok hitam; balok terpotong diblok hitam, balok melintang sebagai tampak",
+          "Tidak menggambarkan pondasi; potongan hanya sampai pelat lantai dan balok paling bawah"
+        ],
+        "1:50": [
+          "Dinding terpotong beroutline tebal, arsir material dinding (termasuk campuran anti air dsb.)",
+          "Kolom struktur & praktis beroutline tebal, arsir material kolom",
+          "Pola lantai pada ruang-ruang utama dan toilet digambarkan",
+          "Arah aliran air pada toilet dan floor drain",
+          "Gambar tangga ada notasi naik/turun + notasi potong"
+        ]
+      }
+    },
+    {
+      "id": "potongan_prinsip",
+      "nama": "Gambar Potongan Prinsip",
+      "kelompok": "potongan",
+      "halaman": 73,
+      "konten": [
+        "Menjelaskan sistem salah satu bagian bangunan paling penting: hubungan sistem struktur, utilitas, dan desain ruang dalam-luar; hubungan atap, dinding, kolom, balok, lantai, dan sistem struktur bawah",
+        "Menjelaskan floor-to-floor secara rinci (jarak lantai ke plafon, rongga plafon di bawah balok/pelat, tinggi balok & tebal pelat, tebal lapisan penutup lantai, letak kulit/selubung bangunan/facade)",
+        "Skala HARUS lebih besar dari gambar Potongan"
+      ],
+      "skala": ["1:50", "1:20", "1:10"],
+      "notasi": [
+        "Peil/ketinggian permukaan lantai utama (cm atau satuan yang disepakati)",
+        "Nama ruangan",
+        "Notasi gambar Detail (jika ada)",
+        "Dimensi horizontal dan vertikal (dimensi vertikal bisa di kanan atau kiri gambar)",
+        "Semua keterangan elemen penting terutama sistem struktur dan utilitas yang tergambar",
+        "Jenis material",
+        "Judul Gambar",
+        "Skala angka dan skala batang"
+      ],
+      "presentasi": {
+        "1:50": [
+          "Atap: outline sistem struktur utama & pendukung (beton); outline rangka atap (baja/kayu/bambu) + penutup atap; outline sistem penyaluran air hujan (talang, jika ada); outline sistem insulasi + keterangan material & ukuran bagian penting",
+          "Langit-langit: struktur & penutup langit-langit tergambar + keterangan material & ukuran sistem langit-langit + penutupnya",
+          "Dinding: terpotong dengan arsir material + keterangan material & ukuran dinding beserta insulasinya (jika ada)",
+          "Pelat lantai & balok: pelat lantai diarsir material lengkap lapisan penutup & finishing; balok terpotong diarsir material, balok melintang sebagai tampak; tidak menggambar pondasi (hanya sampai pelat & balok paling bawah); keterangan material & ukuran pelat & balok",
+          "Lainnya: balkon & dinding parapet diarsir material; dinding sekunder (secondary skin) digambar lengkap sistem rangka & penutup; keterangan material & ukuran"
+        ],
+        "1:20": [
+          "Idem 1:50 dengan tingkat kerincian lebih tinggi (rangka atap, langit-langit, dinding, pelat & balok, secondary skin, keterangan material & ukuran)"
+        ]
+      }
+    },
+    {
+      "id": "rencana_finishing_dinding",
+      "nama": "Gambar Rencana Finishing Dinding",
+      "kelompok": "rencana",
+      "halaman": 77,
+      "konten": [
+        "Gambar denah yang memperlihatkan finishing dinding sebuah bangunan yang lebih kompleks",
+        "Untuk finishing dinding sederhana cukup menampilkan keterangan material pada denah bangunan"
+      ],
+      "skala": ["1:200", "1:100"],
+      "notasi": [
+        "Judul Gambar",
+        "Kode tipe finishing",
+        "Nama ruang dan peil/ketinggian",
+        "Material finishing",
+        "Ukuran/dimensi dinding",
+        "Skala angka dan skala batang"
+      ]
+    },
+    {
+      "id": "rencana_pintu_jendela",
+      "nama": "Gambar Rencana Pintu & Jendela",
+      "kelompok": "rencana",
+      "halaman": 79,
+      "konten": [
+        "Gambar denah yang memperlihatkan posisi dan type pintu dan jendela",
+        "Menampilkan schedule pintu/jendela yang memperlihatkan jumlah tiap jenis pintu/jendela"
+      ],
+      "skala": ["1:200", "1:100"],
+      "notasi": [
+        "Kode type pintu dan jendela",
+        "Struktur utama",
+        "Judul Gambar",
+        "Skala angka dan skala batang"
+      ]
+    },
+    {
+      "id": "rencana_lantai",
+      "nama": "Gambar Rencana Lantai",
+      "kelompok": "rencana",
+      "halaman": 83,
+      "konten": [
+        "Gambar denah yang memperlihatkan pola pemasangan lantai"
+      ],
+      "skala": ["1:200", "1:100", "1:50", "1:20"],
+      "notasi": [
+        "Judul Gambar",
+        "Keterangan ukuran dan material",
+        "Arah pemasangan material penutup lantai (jika diperlukan)",
+        "Notasi struktur bangunan",
+        "Skala angka dan skala batang"
+      ]
+    },
+    {
+      "id": "rencana_atap",
+      "nama": "Gambar Rencana Atap",
+      "kelompok": "rencana",
+      "halaman": 85,
+      "konten": [
+        "Gambar tampak atas atap bangunan",
+        "Menampilkan talang air beserta roof drain",
+        "Potongan atap untuk lebih detailnya"
+      ],
+      "skala": ["1:200", "1:100", "1:50"],
+      "notasi": [
+        "Judul Gambar",
+        "Dimensi/ukuran",
+        "Jenis material",
+        "Roof drain",
+        "Arah aliran air",
+        "Skala angka dan skala batang"
+      ]
+    },
+    {
+      "id": "rencana_plafond",
+      "nama": "Gambar Rencana Plafond",
+      "kelompok": "rencana",
+      "halaman": 87,
+      "konten": [
+        "Gambar denah yang memperlihatkan rangka dan pola plafon"
+      ],
+      "skala": ["1:200", "1:100", "1:50"],
+      "notasi": [
+        "Judul Gambar",
+        "Nama komponen penyusun plafond",
+        "Ukuran dan bahan",
+        "Arah pemasangan material plafond (terutama bahan berpola/bersifat modul)",
+        "Keterangan referensi gambar detail (jika ada)",
+        "Informasi titik lampu",
+        "Skala angka dan skala batang"
+      ]
+    },
+    {
+      "id": "rencana_titik_lampu",
+      "nama": "Gambar Rencana Titik Lampu",
+      "kelompok": "rencana",
+      "halaman": 89,
+      "konten": [
+        "Gambar denah yang memperlihatkan posisi dan tipe lampu, saklar, stop kontak",
+        "Gambar wiring diagram pembagian grup",
+        "Untuk proyek skala besar / memiliki konsultan MEP, gambar ini masuk ke gambar MEP dan disajikan detail"
+      ],
+      "skala": ["1:200", "1:100", "1:50"],
+      "notasi": [
+        "Notasi lampu, saklar, dan stop kontak",
+        "Posisi penempatan lampu, saklar, stop kontak",
+        "Skala angka dan skala batang"
+      ]
+    },
+    {
+      "id": "rencana_sanitasi",
+      "nama": "Gambar Rencana Sanitasi",
+      "kelompok": "rencana",
+      "halaman": 91,
+      "konten": [
+        "Rencana skematik jaringan air kotor, air bersih, dan kotoran",
+        "Untuk proyek skala besar / memiliki konsultan MEP, gambar ini masuk ke gambar MEP dan digambarkan lebih detail"
+      ],
+      "skala": ["1:200", "1:100", "1:50"],
+      "notasi": [
+        "Jaringan air bersih",
+        "Jaringan air kotor",
+        "Jaringan kotoran",
+        "Tangki septik",
+        "Floor clean out",
+        "Ground clean out",
+        "Perangkap udara",
+        "Pipa ven",
+        "Bak kontrol",
+        "Biopori, taman hujan (rain garden), bioswale (jika ada)",
+        "Sumur resapan / kolam / danau retensi / detensi",
+        "Skala angka dan skala batang"
+      ]
+    },
+    {
+      "id": "detail_pintu_jendela",
+      "nama": "Gambar Detail Pintu dan Jendela",
+      "kelompok": "detail",
+      "halaman": 94,
+      "konten": [
+        "Tampak depan pintu dan jendela memuat ukuran dan notasi potongan dari kusen dan daun pintu/jendela",
+        "Potongan pintu berdasarkan tampak",
+        "Detail pintu menggambarkan cara penyambungan, ukuran, dan material",
+        "Posisi dan jenis handle pintu"
+      ],
+      "skala": ["1:20", "1:10"],
+      "notasi": [
+        "Nama type pintu/jendela",
+        "Notasi gambar potongan vertikal dan horizontal pintu/jendela",
+        "Jenis dan ketebalan kaca",
+        "Notasi gambar detail",
+        "Ukuran-ukuran",
+        "Judul Gambar",
+        "Skala angka dan/atau skala batang"
+      ]
+    },
+    {
+      "id": "detail_toilet",
+      "nama": "Gambar Detail Toilet / Kamar Mandi",
+      "kelompok": "detail",
+      "halaman": 97,
+      "konten": [
+        "Denah dan potongan kamar mandi memperlihatkan posisi toilet, shower, washtafel, keran, bak air/mandi, dan lubang drainase/air buangan + kelengkapan lain",
+        "Arah kemiringan lantai",
+        "Arah bukaan pintu dan railing pada toilet untuk difabel",
+        "Jenis dan bahan penutup dinding"
+      ],
+      "skala": ["1:50", "1:20"],
+      "notasi": [
+        "Ukuran dan jarak",
+        "Arah bukaan pintu pada toilet untuk difabel",
+        "Material",
+        "Spesifikasi teknis sanitair",
+        "Notasi gambar detail",
+        "Judul Gambar",
+        "Skala angka dan/atau skala batang"
+      ]
+    },
+    {
+      "id": "detail_ruang_khusus",
+      "nama": "Gambar Detail Ruang Khusus",
+      "kelompok": "detail",
+      "halaman": 101,
+      "konten": [
+        "Detail layout ruang dengan fungsi/spesifikasi khusus (Auditorium, ruang genset, ruang rapat pimpinan, kamar hotel, dll)",
+        "Gambar berupa denah dan potongan ruang"
+      ],
+      "skala": ["1:50", "1:20"],
+      "notasi": [
+        "Ukuran dan jarak",
+        "Nama ruang",
+        "Material",
+        "Notasi gambar detail",
+        "Notasi garis potong",
+        "Judul Gambar",
+        "Skala angka dan/atau skala batang"
+      ]
+    },
+    {
+      "id": "detail_tangga_ramp",
+      "nama": "Gambar Detail Tangga / Ramp",
+      "kelompok": "detail",
+      "halaman": 105,
+      "konten": [
+        "Gambar tampak atas tangga/ramp",
+        "Potongan melintang tangga/ramp",
+        "Detail potongan tangga",
+        "Ukuran anak tangga (lebar pijakan dan tinggi serta area bersih anak tangga)",
+        "Kemiringan tangga"
+      ],
+      "skala": ["1:20", "1:10", "1:5"],
+      "notasi": [
+        "Keterangan peil/elevasi/ketinggian",
+        "Notasi potongan",
+        "Notasi gambar detail",
+        "Jarak dan ukuran (termasuk dimensi tanjakan & injakan anak tangga serta kemiringan ramp)",
+        "Panjang dan lebar bersih anak tangga",
+        "Jumlah injakan anak tangga",
+        "Keterangan bahan dan struktur",
+        "Judul Gambar"
+      ]
+    },
+    {
+      "id": "detail_core_lift",
+      "nama": "Gambar Detail Core Lift Bangunan",
+      "kelompok": "detail",
+      "halaman": 110,
+      "konten": [
+        "Denah dan potongan area lift memperlihatkan posisi lift, shaft mekanis, lobby lift, toilet, tangga, dan lainnya"
+      ],
+      "skala": ["1:50", "1:20"],
+      "notasi": [
+        "Ukuran/dimensi",
+        "Nama ruang",
+        "Material/komponen penyusun",
+        "Notasi gambar detail (jika ada)",
+        "Judul Gambar"
+      ],
+      "catatan": "Sertakan keyplan core yang menunjukkan letak lift dalam core bangunan."
+    },
+    {
+      "id": "detail_lainnya",
+      "nama": "Gambar Detail Lainnya",
+      "kelompok": "detail",
+      "halaman": 113,
+      "konten": [
+        "Gambar Rencana dan Detail lain sesuai kebutuhan informasi desain (rencana penanaman, detail fasade khusus, detail komponen ornamen, papan nama, dll)"
+      ],
+      "skala": ["1:20", "1:10"],
+      "notasi": [
+        "Notasi gambar detail",
+        "Jarak dan ukuran",
+        "Keterangan bahan dan struktur",
+        "Judul Gambar"
+      ]
+    },
+    {
+      "id": "perspektif",
+      "nama": "Gambar Perspektif 3D",
+      "kelompok": "perspektif",
+      "halaman": 116,
+      "konten": [
+        "Perspektif Siteplan: keseluruhan area perencanaan dengan sudut pandang mata burung (bird eye) dan mata orang",
+        "Perspektif Eksterior & Interior: bangunan atau detail arsitektural dari sudut pandang luar dan/atau dalam bangunan",
+        "Perspektif Entrance: area/gerbang masuk kawasan perencanaan",
+        "Perspektif Lain: area lain yang dianggap perlu"
+      ],
+      "skala": ["N/A (tidak berskala)"],
+      "notasi": [
+        "Pencahayaan (alami/buatan) dan bayangan",
+        "Furniture interior/eksterior",
+        "Manusia, kendaraan, ataupun vegetasi (untuk menunjukkan komposisi spasial)"
+      ]
+    }
+  ]
+}

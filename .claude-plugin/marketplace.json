@@ -1,0 +1,18 @@
+{
+  "name": "pupr-arsitektur",
+  "owner": {
+    "name": "Igoy (Voxel Labs)"
+  },
+  "metadata": {
+    "description": "Marketplace plugin Claude Code untuk standar kelengkapan & grafis gambar arsitektur PUPR 2021 (Ditjen Cipta Karya).",
+    "version": "0.1.0"
+  },
+  "plugins": [
+    {
+      "name": "pupr-arsitektur",
+      "source": "./plugins/pupr-arsitektur",
+      "description": "Standar kelengkapan & grafis gambar arsitektur PUPR 2021: 3 skills (standar grafis, checklist kelengkapan per jenis gambar, deliverable/sheet setup dengan integrasi pyRevit) + 1 agent QA (pupr-reviewer). Mencakup 24 jenis gambar dari Block Plan sampai Perspektif 3D.",
+      "version": "0.1.0"
+    }
+  ]
+}
