@@ -1,40 +1,61 @@
-# PUPR Arsitektur — Claude Code Marketplace
+# pupr-arsitektur — Claude Code Marketplace
 
-Marketplace plugin Claude Code yang memuat **`pupr-arsitektur`**: standar **kelengkapan & grafis
-gambar arsitektur** menurut *Modul Standar Kelengkapan Gambar Arsitektur* Kementerian PUPR, Ditjen
-Cipta Karya (Edisi 1, September 2021).
+Repo ini adalah **marketplace Claude Code** (`voxel-labs`) yang memuat satu plugin:
+**`pupr-arsitektur`** — Standar Kelengkapan & Grafis Gambar Arsitektur PUPR 2021.
 
-Isi plugin: **3 skills + 1 agent QA**, mencakup 24 jenis gambar dari Block Plan sampai Perspektif 3D.
-Detail lengkap ada di [README plugin](plugins/pupr-arsitektur/README.md).
+> **PENTING:** Plugin Claude Code **bergantung pada struktur folder**. Jangan upload file lepasan
+> (flat) ke root repo — skill tidak akan terdeteksi dan 3 berkas `SKILL.md` akan saling menimpa.
+> Gunakan **git** agar struktur folder (termasuk `.claude-plugin/`) terjaga.
 
-## Struktur
-
+## Struktur yang benar
 ```
-.claude-plugin/marketplace.json
-LICENSE
-README.md
-plugins/
-└── pupr-arsitektur/
-    ├── .claude-plugin/plugin.json
-    ├── README.md
-    ├── agents/pupr-reviewer.md
-    └── skills/
-        ├── pupr-standar-grafis/
-        ├── pupr-kelengkapan-checklist/
-        └── pupr-deliverable-setup/
+pupr-arsitektur/                              <- root repo = MARKETPLACE
+├── .claude-plugin/
+│   └── marketplace.json                      <- katalog marketplace (wajib)
+├── LICENSE
+├── README.md                                 <- berkas ini
+└── plugins/
+    └── pupr-arsitektur/                       <- PLUGIN
+        ├── .claude-plugin/
+        │   └── plugin.json                    <- manifest plugin (wajib)
+        ├── README.md
+        ├── agents/
+        │   └── pupr-reviewer.md
+        └── skills/
+            ├── pupr-standar-grafis/
+            │   ├── SKILL.md
+            │   └── references/{standar-grafis.md, notasi.md}
+            ├── pupr-kelengkapan-checklist/
+            │   ├── SKILL.md
+            │   ├── references/kelengkapan-gambar.json
+            │   └── scripts/generate_checklist.py
+            └── pupr-deliverable-setup/
+                ├── SKILL.md
+                ├── references/sheet-sequence.json
+                └── scripts/{generate_sheet_list.py, pyrevit_create_sheets.py}
 ```
+Setiap `SKILL.md` **harus** berada di subfolder skill-nya sendiri (nama folder = nama skill).
 
-## Instalasi
-
-Di Claude Code, tambahkan marketplace ini lalu install plugin-nya:
-
-```
+## Instalasi (untuk pengguna)
+```text
 /plugin marketplace add yogisugiono598-netizen/pupr-arsitektur
-/plugin install pupr-arsitektur
+/plugin install pupr-arsitektur@voxel-labs
 ```
+Format install: `<nama-plugin>@<nama-marketplace>` (nama marketplace = field `name` di
+`marketplace.json`, yaitu `voxel-labs`).
 
-Skills & agent otomatis terdaftar (skill tampil sebagai `pupr-arsitektur:<nama-skill>`).
+Memperbarui setelah ada perubahan: `/plugin marketplace update voxel-labs`.
 
-## Lisensi
+### Alternatif tanpa marketplace (pakai sendiri)
+Salin isi `plugins/pupr-arsitektur/skills/*` dan `plugins/pupr-arsitektur/agents/*` ke
+`~/.claude/skills/` dan `~/.claude/agents/`.
 
-[MIT](LICENSE) © 2026 goyy16
+## Plugin: pupr-arsitektur
+Detail lengkap ada di `plugins/pupr-arsitektur/README.md`. Ringkas: 3 skills
+(`pupr-standar-grafis`, `pupr-kelengkapan-checklist`, `pupr-deliverable-setup`) + 1 agent
+(`pupr-reviewer`) mencakup 24 jenis gambar dari Block Plan sampai Perspektif 3D, dengan integrasi
+opsional ke Revit via MCP pyRevit.
+
+## Sumber
+Modul Standar Kelengkapan Gambar Arsitektur, Edisi 1 (Sept 2021), Direktorat BTPP, Ditjen Cipta
+Karya, Kementerian PUPR. Acuan normatif: PP No.16/2021 (pelaksanaan UU No.28/2002 Bangunan Gedung).
